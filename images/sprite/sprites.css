@@ -1,0 +1,52 @@
+.arrow_next-purple, .arrow_next, .social-icon-facebook-purple, .social-icon-facebook, .social-icon-instagram-purple, .social-icon-instagram, .social-icon-vk-purple, .social-icon-vk{
+	background: url(sprites.png) no-repeat;
+}
+
+.arrow_next-purple{
+	background-position: -63px -167px ;
+	width: 20px;
+	height: 14px;
+}
+
+.arrow_next{
+	background-position: -13px -167px ;
+	width: 20px;
+	height: 14px;
+}
+
+.social-icon-facebook-purple{
+	background-position: -62px -112px ;
+	width: 26px;
+	height: 26px;
+}
+
+.social-icon-facebook{
+	background-position: -11px -110px ;
+	width: 26px;
+	height: 26px;
+}
+
+.social-icon-instagram-purple{
+	background-position: -62px -63px ;
+	width: 26px;
+	height: 26px;
+}
+
+.social-icon-instagram{
+	background-position: -14px -63px ;
+	width: 26px;
+	height: 26px;
+}
+
+.social-icon-vk-purple{
+	background-position: -61px -13px ;
+	width: 26px;
+	height: 26px;
+}
+
+.social-icon-vk{
+	background-position: -12px -12px ;
+	width: 26px;
+	height: 26px;
+}
+

@@ -1,0 +1,666 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  transition: all 0.7s;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:url("../fonts/Roboto/Roboto-Italic.woff2") format("woff2"),
+      url("../fonts/Roboto/Roboto-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"),
+      url("../fonts/Roboto/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+      url("../fonts/Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src:url("../fonts/Fira_Sans/FiraSans-Medium.woff2") format("woff2"),
+      url("../fonts/Fira_Sans/FiraSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+body {
+  font-family: Roboto;
+  font-weight: 400;
+  background-color: #ede9e0;
+  color: #202020;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #202020;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 0.5px;
+
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+/*FIRST BLOCK*/
+
+.first_block {
+  margin-left: 320px;
+  margin-bottom: 200px;
+}
+
+.first_block__title {
+  padding-top: 140px;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.first_block__subtitle {
+  display: inline-block;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #737274;
+  text-transform: uppercase;
+  border-left: 2px solid #510fad ;
+  padding-left: 10px;
+  margin-top: 50px;
+  letter-spacing:1px;
+}
+/*/FIRST BLOCK*/
+
+
+/*GLOBAL CLASSES*/
+.title {
+  font-family: "Fira Sans";
+}
+
+.white-text {
+  color: white;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.page_wrapper {
+  background-image: url(../images/dachshund_hammock.png);
+  background-repeat: no-repeat;
+  background-position: 18px 0;
+  width: 1024px;
+  margin: auto;
+}
+
+/*.wrap-container {*/
+  /*max-width: 1024px;*/
+  /*margin: 0 auto;*/
+/*}*/
+
+/*/GLOBALL CLASSES*/
+
+/*HEADER*/
+
+.logo {
+  /*float: left;*/
+  z-index: 2;
+  position: relative;
+}
+
+.logo_img {
+  position: absolute;
+  top: 5px;
+}
+
+.header_photo {
+  position: relative;
+}
+
+.header_img {
+  position: absolute;
+  top: 0;
+  left: -23px;
+}
+
+.main-menu {
+  /*display: flex;*/
+}
+
+.header__links {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25px;
+}
+
+.main-menu__list {
+
+  /*display: flex;*/
+}
+
+.main-menu__item {
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 16px;
+}
+.main-menu__item:first-child {
+  padding-left: 0;
+}
+
+.main-menu__link:hover{
+  color: #510fad;
+}
+
+footer .main-menu__link {
+  color: #737274;
+}
+
+.phone {
+  /*margin-top: 25px;*/
+  margin-left: 30px;
+  color: #510fad;
+}
+
+/*ABOUT - О НАС*/
+
+.wrap--about {
+  height: 855px;
+
+  clear: both;
+  /*background-color: #510fad;*/
+  background-image: url(../images/backround_about.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+
+}
+
+.about_inner {
+  padding-top: 180px;
+}
+
+.about__title {
+  margin-bottom: 30px;
+}
+
+.about__subtitle {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  max-width: 360px;
+  color: #b8adc8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.about_content__photo {
+  width: 460px;
+  height: 274px;
+  border-radius: 8px 8px 8px 8px;
+  overflow: hidden;
+  float: left;
+  box-shadow: -20px 0px 50px 5px rgba(0, 0, 0, 0.50)
+}
+
+.about_content__photo:after {
+  content: "";
+  display: block;
+}
+
+.about_content__photo:hover {
+ box-shadow: -20px 0px 60px 10px rgba(0, 0, 0, 0.60)
+}
+
+.about_content__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  /*height: 270px;*/
+}
+
+.about_content__list {
+  padding-top: 30px;
+}
+
+.about_content__item {
+  line-height: 30px;
+  list-style-type: disc;
+}
+
+.about_content__link {
+  margin-left: -10px;
+  margin-top: 70px;
+  /*margin-left: 20px;*/
+  color: #ffec00;
+}
+
+.about_content__link:after {
+  content: "";
+  display: block;
+  background: url(../images/sprite/sprites.png) -13px -167px no-repeat;
+  /*background-repeat: ;*/
+  /*background-position: ;*/
+  width: 20px;
+  height: 14px;
+  position: relative;
+  top: -16px;
+  left: 200px;
+}
+
+.about_content__link:hover {
+  color: #8f8e90;
+}
+
+/*/ABOUT - О НАС*/
+
+/*OUR PETS - НАШИ ПОРОДЫ*/
+
+.our_pets {
+  clear: both;
+  margin-top: 140px;
+  margin-bottom: 150px;
+}
+
+.our_pets__title {
+  margin-bottom: 100px;
+}
+
+.our_pets__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*float: left;*/
+}
+
+.our_pets__card {
+  max-width: 450px;
+  min-height:180px;
+}
+
+.card__title {
+  font-family: "Fira Sans";
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.card__photo {
+  float: left;
+  margin-right: 20px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.card__decription {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 30px;
+  color: #737274;
+  margin-bottom: 20px;
+}
+
+.card__link {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  color: #510fad;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.card__link:after {
+  content: "";
+  display: block;
+  background: url(../images/sprite/sprites.png) -63px -167px no-repeat;
+  width: 20px;
+  height: 14px;
+  position: relative;
+  top: -23px;
+  left: 340px;
+}
+
+.card__link:hover{
+  color: #8f8e90;
+}
+
+
+/*/OUR PETS - НАШИ ПОРОДЫ*/
+
+/*REVIEWS - ОТЗЫВЫ ХОЗЯЕВ*/
+
+.reviews {
+  margin-bottom: 200px;
+}
+
+blockquote {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.reviews__right-block {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.reviews__left-block {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.blockquote__title:before {
+  content: "";
+  display: block;
+  background-image: url(../images/“.png);
+  width: 81px;
+  height: 66px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.blockquote__date {
+  color: #737274;
+  font-style: italic;
+}
+
+.blockquote__text {
+  line-height: 30px;
+}
+
+.blockquote__img {
+  /*float: right;*/
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: 460px;
+  height: 274px;
+  margin-top: 80px;
+  box-shadow: -6px 0px 19px 9px #d5d1ca
+}
+
+.blockquote__img:hover {
+  box-shadow: -6px 0px 30px 15px #d4d0c7
+}
+
+.blockquote__footer {
+  font-style: italic;
+  color: #737274;
+  /*float: right;*/
+}
+
+.blockquote__footer--link {
+  color: #510fad;
+}
+
+.blockquote__footer--link:hover {
+  color: #8f8e90;
+}
+/*/REVIEWS - ОТЗЫВЫ ХОЗЯЕВ*/
+
+
+/*BLOG - ВСЕ О ЖИВТОНЫХ*/
+
+.blog {
+  clear: both;
+  margin-bottom: 150px;
+}
+
+.blog h2 {
+  text-align: left;
+
+}
+
+
+.blog-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 110px;
+}
+
+.blog__left-block{
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  /*justify-content: center;*/
+}
+
+.blog__right-block {
+  display: flex;
+}
+
+.blog__main {
+  color: #b8adc8;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.wrap--blog {
+  background-image: url(../images/background_blog.png);
+}
+
+.blog__card {
+  display: flex;
+  max-width: 220px;
+  height: 290px;
+  background-color: #fff;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  box-shadow: -6px 0 20px 11px #2020204f
+}
+
+.blog__card:hover {
+  box-shadow: -6px 0 20px 15px #35353580
+}
+
+.article__title {
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.article__link {
+  font-family: "Fira Sans";
+  font-size: 14px;
+  color: #5c11c5;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.article__link:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 14px;
+  position: relative;
+  top: -22px;
+  left: 115px;
+  background: url(../images/sprite/sprites.png) -63px -167px no-repeat;
+}
+
+.article__link:hover{
+  color: #8f8e90;
+}
+
+/*/BLOG - ВСЕ О ЖИВТОНЫХ*/
+
+
+/*CONTACTS - КОНТАКТЫ*/
+
+.contacts {
+  margin-bottom: 120px;
+}
+
+.contacts h2 {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.contacts__inner {
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.contacts__left-block {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contacts__right-block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.contact__name {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Fira Sans";
+  color: #737274;
+}
+
+.contact__description {
+  line-height: 30px;
+}
+
+.contacts__right-block .contact__name:nth-child(1) {
+  /*margin-top: 70px;*/
+}
+
+/*/CONTACTS - КОНТАКТЫ*/
+
+
+main:after {
+  content: "";
+  width: 940px;
+  display: block;
+  border: 2px solid #d5d1ca;
+  margin: 0 auto;
+}
+
+.footer-menu {
+  margin-top: 35px;
+  margin-bottom: 90px;
+}
+
+
+/*SPRITE*/
+
+.link {
+  background: url(../images/sprite/sprites.png) no-repeat;
+  display: block;
+}
+
+.vk {
+  background-position: -12px -12px ;
+  width: 26px;
+  height: 26px;
+}
+
+footer .vk {
+  background-position: -61px -13px ;
+  width: 26px;
+  height: 26px;
+}
+
+.facebook {
+  background-position: -11px -110px ;
+  width: 26px;
+  height: 26px;
+}
+
+footer .facebook {
+  background-position: -62px -112px ;
+  width: 26px;
+  height: 26px;
+}
+
+.instagram {
+  background-position: -14px -63px ;
+  width: 26px;
+  height: 26px;
+}
+
+footer .instagram {
+  background-position: -62px -63px ;
+  width: 26px;
+  height: 26px;
+}
+
+.social_item {
+  margin-right: 10px;
+}
+
+.social_links {
+  display: flex;
+  margin-top: 30px;
+}
+
+footer .social_links {
+  /*display: flex;*/
+  /*justify-content: flex-end;
+  margin-top: 35px;*/
+}
+
+/*.page-footer .container{
+  display: flex;
+}*/
+
+.footer__social_links{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.footer-inner {
+  display: flex;
+}
+
+/*/SPRITE*/
